@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        "module": "CommonJS",
+        "target": "ESNext",
+        "moduleResolution": "Node",
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "isolatedModules": false,
+        "strict": true,
+        "noImplicitAny": true,
+        "useUnknownInCatchVariables": false,
+        "inlineSourceMap": true,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "lib": ["esnext"]
+}

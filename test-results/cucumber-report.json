@@ -1,0 +1,659 @@
+[
+  {
+    "description": "    JIRA_ID: DemoProj_1235",
+    "elements": [
+      {
+        "description": "",
+        "id": "verify-product-page-functionality;as-a-authenticated-users-i-filter-the-products-based-on-different-filter-criteria",
+        "keyword": "Scenario Outline",
+        "line": 9,
+        "name": "As a Authenticated Users I Filter the products based on different filter criteria",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 523791400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User navigates to sauce demo application",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1941772300
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "password"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "standard_user",
+                      "secret_sauce"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I login with valid username and password",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 923582000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "I verify Product page displays",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187513700
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "filter"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Name (Z to A)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Name (A to Z)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (low to high)"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Price (high to low)"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I filter the product with below filter criteria",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 554318700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 446761699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@products",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "verify-product-page-functionality",
+    "line": 3,
+    "keyword": "Feature",
+    "name": "Verify Product page functionality",
+    "tags": [
+      {
+        "name": "@products",
+        "line": 1
+      },
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "e2e\\features\\FilterProduct.feature"
+  },
+  {
+    "description": "  JIRA_ID: DemoProj_1234",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-sauce-application-with-different-users;as-a-authenticated-users-i-login-to-applcation",
+        "keyword": "Scenario Outline",
+        "line": 17,
+        "name": "As a Authenticated Users I login to applcation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 675327800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to sauce demo application",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1083316900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enter the username as \"standard_user\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224200399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password as \"secret_sauce\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 101274899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User click on the login button",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462623599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify Product page displays",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219412500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I logout user",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 692722299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I verify user is successfully logged out",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 364716800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 237686999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-sauce-application-with-different-users;as-a-authenticated-users-i-login-to-applcation",
+        "keyword": "Scenario Outline",
+        "line": 18,
+        "name": "As a Authenticated Users I login to applcation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 560224099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to sauce demo application",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1094617500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enter the username as \"problem_user\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 182608300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password as \"secret_sauce\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168164900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User click on the login button",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 311872500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify Product page displays",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183763300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I logout user",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 619602999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I verify user is successfully logged out",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 165589700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88703799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-sauce-application-with-different-users;as-a-authenticated-users-i-login-to-applcation",
+        "keyword": "Scenario Outline",
+        "line": 19,
+        "name": "As a Authenticated Users I login to applcation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 384405799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to sauce demo application",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 905859600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User enter the username as \"performance_glitch_user\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90231100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "User enter the password as \"secret_sauce\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 109700399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User click on the login button",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5170987800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I verify Product page displays",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111206400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I logout user",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 608796299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I verify user is successfully logged out",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157578899
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 311545599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-sauce-application-with-different-users;as-a-locked-out-user-i-try-to-login-to-applcation",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "As a Locked out user I try to login to applcation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 254478399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "User navigates to sauce demo application",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 684816100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User enter the username as \"locked_out_user\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80889899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "User enter the password as \"secret_sauce\"",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68306800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "User click on the login button",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 112625299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I verify error message \"Epic sadface: Sorry, this user has been locked out.\" is displayed",
+            "match": {
+              "location": "e2e\\steps\\loginSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16940800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 127915300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-sauce-application-with-different-users",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Login to Sauce application with different users",
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      },
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "e2e\\features\\VerifyLogin.feature"
+  }
+]
